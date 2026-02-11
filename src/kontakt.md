@@ -1,9 +1,16 @@
 ---
 layout: page.njk
 title: Kontakt
-description: So erreichst du mich.
+subtitle: Let's connect
 ---
 
-E-Mail: [deine@email.de](mailto:deine@email.de)
+**E-Mail**
+[kontakt@zoebarossi.de](mailto:kontakt@zoebarossi.de)
 
-Oder schreib mir auf Instagram: [@deinname](https://instagram.com/deinname)
+**Instagram**
+[@zoebarossi](https://instagram.com/zoebarossi)
+
+**Strava**
+[Zoe Barossi auf Strava](https://strava.com)
+
+Für Sponsoring-Anfragen, Medien oder einfach ein Hallo – schreib mir.

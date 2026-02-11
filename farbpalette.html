@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farbpalette – Hero Image</title>
+<style>
+  :root {
+    --color-bg:        #0a1628;
+    --color-primary:   #1a3a5c;
+    --color-secondary: #3a6080;
+    --color-accent:    #e86a7a;
+    --color-teal:      #2abfbf;
+    --color-warm:      #f4a842;
+    --color-light:     #f0ece6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-light);
+    padding: 40px;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-bottom: 40px;
+  }
+
+  .palette-section {
+    margin-bottom: 60px;
+  }
+
+  .palette-section h2 {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+  }
+
+  .swatches {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .swatch {
+    width: 140px;
+  }
+
+  .swatch-color {
+    width: 140px;
+    height: 100px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+  }
+
+  .swatch-hex {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 13px;
+    color: var(--color-light);
+  }
+
+  .swatch-label {
+    font-size: 11px;
+    color: var(--color-secondary);
+    margin-top: 2px;
+  }
+
+  /* Demo section */
+  .demo {
+    background: var(--color-bg);
+    border: 1px solid var(--color-primary);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 600px;
+  }
+
+  .demo h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-light);
+    margin-bottom: 12px;
+  }
+
+  .demo p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-secondary);
+    margin-bottom: 24px;
+  }
+
+  .demo .btn-primary {
+    display: inline-block;
+    background: var(--color-accent);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 12px;
+  }
+
+  .demo .btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--color-teal);
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--color-teal);
+  }
+
+  .demo .tag {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-teal);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .css-block {
+    background: #0d1f33;
+    border-radius: 12px;
+    padding: 24px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--color-secondary);
+    max-width: 440px;
+    overflow-x: auto;
+  }
+
+  .css-block .prop { color: var(--color-teal); }
+  .css-block .val { color: var(--color-accent); }
+</style>
+</head>
+<body>
+
+<h1>Farbpalette · aus Hero Image</h1>
+
+<div class="palette-section">
+  <h2>Design Palette</h2>
+  <div class="swatches">
+    <div class="swatch">
+      <div class="swatch-color" style="background: var(--color-bg); border: 1px solid var(--color-primary);"></div>
+      <div class="swatch-hex">#0a1628</div>
+      <div class="swatch-label">Background</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: var(--color-primary);"></div>
+      <div class="swatch-hex">#1a3a5c</div>
+      <div class="swatch-label">Primary</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: var(--color-secondary);"></div>
+      <div class="swatch-hex">#3a6080</div>
+      <div class="swatch-label">Secondary</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: var(--color-accent);"></div>
+      <div class="swatch-hex">#e86a7a</div>
+      <div class="swatch-label">Accent / CTA</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: var(--color-teal);"></div>
+      <div class="swatch-hex">#2abfbf</div>
+      <div class="swatch-label">Teal / Sport</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: var(--color-warm);"></div>
+      <div class="swatch-hex">#f4a842</div>
+      <div class="swatch-label">Warm / Licht</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: var(--color-light);"></div>
+      <div class="swatch-hex">#f0ece6</div>
+      <div class="swatch-label">Light / Text</div>
+    </div>
+  </div>
+</div>
+
+<div class="palette-section">
+  <h2>Anwendungsbeispiel</h2>
+  <div class="demo">
+    <span class="tag">Triathletin · Berlin × São Paulo</span>
+    <h3>Zoe Barossi</h3>
+    <p>Ausdauer ist keine Frage der Beine. Es ist eine Frage des Kopfes, der nicht aufgibt, wenn der Körper längst will.</p>
+    <a href="#" class="btn-primary">Mehr erfahren</a>
+    <a href="#" class="btn-secondary">Kontakt</a>
+  </div>
+</div>
+
+<div class="palette-section">
+  <h2>CSS Variables</h2>
+  <div class="css-block">
+    <span style="color: #546e7a;">:root</span> {<br>
+    &nbsp;&nbsp;<span class="prop">--color-bg:</span> <span class="val">#0a1628</span>;<br>
+    &nbsp;&nbsp;<span class="prop">--color-primary:</span> <span class="val">#1a3a5c</span>;<br>
+    &nbsp;&nbsp;<span class="prop">--color-secondary:</span> <span class="val">#3a6080</span>;<br>
+    &nbsp;&nbsp;<span class="prop">--color-accent:</span> <span class="val">#e86a7a</span>;<br>
+    &nbsp;&nbsp;<span class="prop">--color-teal:</span> <span class="val">#2abfbf</span>;<br>
+    &nbsp;&nbsp;<span class="prop">--color-warm:</span> <span class="val">#f4a842</span>;<br>
+    &nbsp;&nbsp;<span class="prop">--color-light:</span> <span class="val">#f0ece6</span>;<br>
+    }
+  </div>
+</div>
+
+</body>
+</html>

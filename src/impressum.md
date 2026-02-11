@@ -5,13 +5,13 @@ title: Impressum
 
 **Angaben gemäß § 5 TMG**
 
-Vorname Nachname
+Zoe Barossi
 Straße Nr.
-PLZ Ort
+PLZ Berlin
 
 **Kontakt**
-E-Mail: deine@email.de
+E-Mail: kontakt@zoebarossi.de
 
 **Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV**
 
-Vorname Nachname
+Zoe Barossi

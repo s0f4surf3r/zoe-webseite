@@ -5,10 +5,10 @@ title: Datenschutz
 
 **Verantwortliche Stelle**
 
-Vorname Nachname
+Zoe Barossi
 Straße Nr.
-PLZ Ort
-E-Mail: deine@email.de
+PLZ Berlin
+E-Mail: kontakt@zoebarossi.de
 
 **Hosting**
 

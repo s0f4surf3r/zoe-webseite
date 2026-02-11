@@ -7,12 +7,16 @@
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
   <header>
     <nav>
-      <a href="/">Start</a>
-      <a href="/ueber/">Über mich</a>
-      <a href="/kontakt/">Kontakt</a>
+      <a href="/">START A</a>
+      <a href="/start-b/">START B</a>
+      <a href="/der-weg/">DER WEG</a>
+      <a href="/unterstuetzen/">UNTERSTÜTZEN</a>
+      <a href="/ausruestung/">AUSRÜSTUNG</a>
+      <a href="/ueber/">ÜBER ZOE</a>
+      <a href="/kontakt/">KONTAKT</a>
     </nav>
   </header>
 
@@ -22,8 +26,8 @@
 
   <footer>
     <nav>
-      <a href="/impressum/">Impressum</a>
-      <a href="/datenschutz/">Datenschutz</a>
+      <a href="/impressum/">IMPRESSUM</a>
+      <a href="/datenschutz/">DATENSCHUTZ</a>
     </nav>
   </footer>
 </body>
