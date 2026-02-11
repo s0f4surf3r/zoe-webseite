@@ -179,6 +179,10 @@ footer nav a {
   letter-spacing: 1px;
 }
 
+.home-mobile {
+  display: none;
+}
+
 /* === Startseite === */
 .home {
   min-height: 100vh;
@@ -195,7 +199,7 @@ footer nav a {
 .home-text {
   position: relative;
   z-index: 2;
-  padding: 0 0 clamp(3rem, 8vh, 6rem) clamp(2rem, 6vw, 6rem);
+  padding: 0 0 0 clamp(2rem, 6vw, 6rem);
   max-width: 55%;
 }
 
@@ -204,8 +208,7 @@ footer nav a {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--color-teal);
-  margin-bottom: 1rem;
-  padding-left: 0.35rem;
+  margin-bottom: 0.3rem;
 }
 
 .home-name {
@@ -220,14 +223,13 @@ footer nav a {
 }
 
 .home-subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: clamp(2rem, 5vw, 3.2rem);
   font-weight: 300;
   letter-spacing: 6px;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-top: 1.5rem;
+  margin-top: 0.4rem;
   margin-bottom: 0;
-  padding-left: 0.35rem;
 }
 
 .home-text-right {
@@ -547,7 +549,9 @@ footer nav a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--color-bg);
+    background: rgba(10, 22, 40, 0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -564,22 +568,26 @@ footer nav a {
     letter-spacing: 3px;
   }
 
-  .home {
-    background-size: auto 95%;
-    background-position: 80% 20%;
+  .home-desktop {
+    display: none;
+  }
+
+  .home-mobile {
+    display: flex;
+    background-position: center bottom;
   }
 
   .home-text {
     max-width: 100%;
-    padding: 0 1.5rem clamp(2rem, 6vh, 4rem);
+    padding: 0 1.5rem clamp(2rem, 4vh, 3rem) 2rem;
   }
 
   .home-name {
-    font-size: clamp(3rem, 15vw, 5rem);
+    font-size: clamp(3.45rem, 17.25vw, 5.75rem);
   }
 
   .home-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.44rem;
     letter-spacing: 4px;
   }
 
