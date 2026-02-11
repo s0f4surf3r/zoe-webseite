@@ -10,13 +10,23 @@
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
   <header>
     <nav>
-      <a href="/">START A</a>
-      <a href="/start-b/">START B</a>
-      <a href="/der-weg/">DER WEG</a>
-      <a href="/unterstuetzen/">UNTERSTÜTZEN</a>
-      <a href="/ausruestung/">AUSRÜSTUNG</a>
-      <a href="/ueber/">ÜBER ZOE</a>
-      <a href="/kontakt/">KONTAKT</a>
+      <div class="nav-links">
+        <a href="/">START A</a>
+        <a href="/start-b/">START B</a>
+        <a href="/der-weg/">DER WEG</a>
+        <a href="/unterstuetzen/">UNTERSTÜTZEN</a>
+        <a href="/ausruestung/">AUSRÜSTUNG</a>
+        <a href="/ueber/">ÜBER ZOE</a>
+        <a href="/kontakt/">KONTAKT</a>
+      </div>
+      <div class="lang-switch">
+        <button class="lang-btn" aria-label="Sprache wählen">DE ▾</button>
+        <div class="lang-dropdown">
+          <a href="#" class="lang-active">DE</a>
+          <a href="#">EN</a>
+          <a href="#">PT</a>
+        </div>
+      </div>
     </nav>
   </header>
 
