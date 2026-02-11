@@ -1,20 +1,21 @@
 ---
 layout: page.njk
-title: Kontakt
+title: Contact
 subtitle: Let's connect
-lang: de
-slug: kontakt
+lang: en
+slug: contact
 slugEn: contact
 slugPt: contato
+permalink: /en/contact/
 ---
 
-**E-Mail**
+**Email**
 [kontakt@zoebarossi.de](mailto:kontakt@zoebarossi.de)
 
 **Instagram**
 [@zoebarossi](https://instagram.com/zoebarossi)
 
 **Strava**
-[Zoe Barossi auf Strava](https://strava.com)
+[Zoe Barossi on Strava](https://strava.com)
 
-Für Sponsoring-Anfragen, Medien oder einfach ein Hallo – schreib mir.
+For sponsorship inquiries, media or just to say hi – write me.

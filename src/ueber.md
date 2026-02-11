@@ -2,6 +2,10 @@
 layout: page.njk
 title: Über Zoe
 subtitle: Triathletin · Berlin × São Paulo
+lang: de
+slug: ueber
+slugEn: about
+slugPt: sobre
 ---
 
 Zoe Barossi, 35, lebt zwischen Berlin und São Paulo. Triathletin. Auf dem Weg zur Ironman Weltmeisterschaft der Frauen 2026 in Nizza.

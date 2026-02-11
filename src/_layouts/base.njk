@@ -1,5 +1,8 @@
+{% set lang = lang or "de" %}
+{% set t = i18n[lang] %}
+{% set prefix = "" if lang == "de" else "/" + lang %}
 <!DOCTYPE html>
-<html lang="de">
+<html lang="{{ lang }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +13,34 @@
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
   <header>
     <nav>
+      <button class="burger" aria-label="Menü" onclick="document.body.classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
       <div class="nav-links">
-        <a href="/">START A</a>
-        <a href="/start-b/">START B</a>
-        <a href="/der-weg/">DER WEG</a>
-        <a href="/unterstuetzen/">UNTERSTÜTZEN</a>
-        <a href="/ausruestung/">AUSRÜSTUNG</a>
-        <a href="/ueber/">ÜBER ZOE</a>
-        <a href="/kontakt/">KONTAKT</a>
+        <a href="{{ prefix }}/">{{ t.nav.start }}</a>
+        <a href="{{ prefix }}/{% if lang == 'de' %}der-weg{% elif lang == 'en' %}the-way{% else %}o-caminho{% endif %}/">{{ t.nav.way }}</a>
+        <a href="{{ prefix }}/{% if lang == 'de' %}unterstuetzen{% elif lang == 'en' %}support{% else %}apoiar{% endif %}/">{{ t.nav.support }}</a>
+        <a href="{{ prefix }}/{% if lang == 'de' %}ausruestung{% elif lang == 'en' %}gear{% else %}equipamento{% endif %}/">{{ t.nav.gear }}</a>
+        <a href="{{ prefix }}/{% if lang == 'de' %}ueber{% elif lang == 'en' %}about{% else %}sobre{% endif %}/">{{ t.nav.about }}</a>
+        <a href="{{ prefix }}/{% if lang == 'de' %}kontakt{% elif lang == 'en' %}contact{% else %}contato{% endif %}/">{{ t.nav.contact }}</a>
       </div>
-      <div class="lang-switch">
-        <button class="lang-btn" aria-label="Sprache wählen">DE ▾</button>
-        <div class="lang-dropdown">
-          <a href="#" class="lang-active">DE</a>
-          <a href="#">EN</a>
-          <a href="#">PT</a>
+      <div class="nav-right">
+        <a href="https://www.instagram.com/zoebarossi" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.strava.com/athletes/35981492" target="_blank" rel="noopener" class="social-icon" aria-label="Strava">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg>
+        </a>
+        <a href="https://linktr.ee/zoebarossi" target="_blank" rel="noopener" class="social-icon" aria-label="Linktree">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.953 15.066l-.038-4.2 4.183-.006v-1.86H7.916l4.23-4.165-1.327-1.28L7.9 6.636l.008-4.062H5.926l.003 4.065L2.97 3.545 1.642 4.835l4.239 4.163H1.77v1.862l4.192.006-.038 4.2h2.029zm8.144 3.504L12.2 14.809l-1.318 1.322 3.894 3.776v3.519h1.982v-3.505l3.908-3.79-1.318-1.322-3.25 3.761z"/></svg>
+        </a>
+        <div class="lang-switch">
+          <button class="lang-btn" aria-label="Sprache wählen">{{ lang | upper }} ▾</button>
+          <div class="lang-dropdown">
+            <a href="/{{ slug or '' }}" {% if lang == 'de' %}class="lang-active"{% endif %}>DE</a>
+            <a href="/en/{{ slugEn or slug or '' }}" {% if lang == 'en' %}class="lang-active"{% endif %}>EN</a>
+            <a href="/pt/{{ slugPt or slug or '' }}" {% if lang == 'pt' %}class="lang-active"{% endif %}>PT</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -36,8 +52,8 @@
 
   <footer>
     <nav>
-      <a href="/impressum/">IMPRESSUM</a>
-      <a href="/datenschutz/">DATENSCHUTZ</a>
+      <a href="{{ prefix }}/{% if lang == 'de' %}impressum{% elif lang == 'en' %}imprint{% else %}impressum{% endif %}/">{{ t.footer.imprint }}</a>
+      <a href="{{ prefix }}/{% if lang == 'de' %}datenschutz{% elif lang == 'en' %}privacy{% else %}privacidade{% endif %}/">{{ t.footer.privacy }}</a>
     </nav>
   </footer>
 </body>

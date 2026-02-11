@@ -1,6 +1,10 @@
 ---
 layout: page.njk
 title: Datenschutz
+lang: de
+slug: datenschutz
+slugEn: privacy
+slugPt: privacidade
 ---
 
 **Verantwortliche Stelle**

@@ -1,6 +1,10 @@
 ---
 layout: page.njk
 title: Impressum
+lang: de
+slug: impressum
+slugEn: imprint
+slugPt: impressum
 ---
 
 **Angaben gemäß § 5 TMG**

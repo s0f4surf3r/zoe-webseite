@@ -1,0 +1,56 @@
+{
+  "de": {
+    "nav": {
+      "start": "START",
+      "way": "DER WEG",
+      "support": "UNTERSTÜTZEN",
+      "gear": "AUSRÜSTUNG",
+      "about": "ÜBER ZOE",
+      "contact": "KONTAKT"
+    },
+    "footer": {
+      "imprint": "IMPRESSUM",
+      "privacy": "DATENSCHUTZ"
+    },
+    "home": {
+      "tag": "Triathletin · Berlin",
+      "subtitle": "Way to Nizza 2026"
+    }
+  },
+  "en": {
+    "nav": {
+      "start": "START",
+      "way": "THE WAY",
+      "support": "SUPPORT",
+      "gear": "GEAR",
+      "about": "ABOUT ZOE",
+      "contact": "CONTACT"
+    },
+    "footer": {
+      "imprint": "IMPRINT",
+      "privacy": "PRIVACY"
+    },
+    "home": {
+      "tag": "Triathlete · Berlin",
+      "subtitle": "Way to Nice 2026"
+    }
+  },
+  "pt": {
+    "nav": {
+      "start": "INÍCIO",
+      "way": "O CAMINHO",
+      "support": "APOIAR",
+      "gear": "EQUIPAMENTO",
+      "about": "SOBRE ZOE",
+      "contact": "CONTATO"
+    },
+    "footer": {
+      "imprint": "IMPRESSUM",
+      "privacy": "PRIVACIDADE"
+    },
+    "home": {
+      "tag": "Triatleta · Berlim",
+      "subtitle": "Caminho para Nice 2026"
+    }
+  }
+}
