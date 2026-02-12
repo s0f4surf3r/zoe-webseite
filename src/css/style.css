@@ -179,10 +179,6 @@ footer nav a {
   letter-spacing: 1px;
 }
 
-.home-mobile {
-  display: none;
-}
-
 /* === Startseite === */
 .home {
   min-height: 100vh;
@@ -199,8 +195,12 @@ footer nav a {
 .home-text {
   position: relative;
   z-index: 2;
-  padding: 0 0 0 clamp(2rem, 6vw, 6rem);
+  padding: 0 0 clamp(3rem, 8vh, 6rem) clamp(2rem, 6vw, 6rem);
   max-width: 55%;
+}
+
+.home.home-mobile {
+  display: none;
 }
 
 .home-tag {
@@ -209,6 +209,7 @@ footer nav a {
   text-transform: uppercase;
   color: var(--color-teal);
   margin-bottom: 0.3rem;
+  padding-left: 0.25rem;
 }
 
 .home-name {
@@ -230,6 +231,7 @@ footer nav a {
   color: var(--color-accent);
   margin-top: 0.4rem;
   margin-bottom: 0;
+  padding-left: 0.25rem;
 }
 
 .home-text-right {
@@ -568,11 +570,11 @@ footer nav a {
     letter-spacing: 3px;
   }
 
-  .home-desktop {
+  .home.home-desktop {
     display: none;
   }
 
-  .home-mobile {
+  .home.home-mobile {
     display: flex;
     background-position: center bottom;
   }
