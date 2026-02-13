@@ -8,6 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0a1628">
+
+  <!-- Open Graph / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or 'Zoe Barossi – Triathletin aus Berlin. Way to Nizza 2026.' }}">
+  <meta property="og:image" content="https://zoebarossi.netlify.app/images/Hero4.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://zoebarossi.netlify.app{{ prefix }}/{{ slug or '' }}">
+
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
@@ -51,7 +69,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Zoe Barossi · Design by <a href="https://jochenhornung.de" target="_blank" rel="noopener">Jochen Hornung</a></p>
+    <p>&copy; 2026 Zoe Barossi</p>
     <nav>
       <a href="{{ prefix }}/{% if lang == 'de' %}impressum{% elif lang == 'en' %}imprint{% else %}impressum{% endif %}/">{{ t.footer.imprint }}</a>
       <a href="{{ prefix }}/{% if lang == 'de' %}datenschutz{% elif lang == 'en' %}privacy{% else %}privacidade{% endif %}/">{{ t.footer.privacy }}</a>
