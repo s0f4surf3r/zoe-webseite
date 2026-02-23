@@ -3,9 +3,10 @@
     "nav": {
       "start": "START",
       "way": "DER WEG",
-      "support": "UNTERSTÜTZEN",
+      "support": "PARTNER",
       "gear": "AUSRÜSTUNG",
       "about": "ÜBER ZOE",
+      "live": "LIVE",
       "contact": "KONTAKT"
     },
     "footer": {
@@ -21,9 +22,10 @@
     "nav": {
       "start": "START",
       "way": "THE WAY",
-      "support": "SUPPORT",
+      "support": "PARTNERS",
       "gear": "GEAR",
       "about": "ABOUT ZOE",
+      "live": "LIVE",
       "contact": "CONTACT"
     },
     "footer": {
@@ -39,9 +41,10 @@
     "nav": {
       "start": "INÍCIO",
       "way": "O CAMINHO",
-      "support": "APOIAR",
+      "support": "PARCEIROS",
       "gear": "EQUIPAMENTO",
       "about": "SOBRE ZOE",
+      "live": "LIVE",
       "contact": "CONTATO"
     },
     "footer": {

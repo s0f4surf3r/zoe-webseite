@@ -505,6 +505,108 @@ footer nav a {
   margin-bottom: 0;
 }
 
+/* === Stats Grid (Partner-Seite) === */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.stat-item {
+  background: var(--color-primary);
+  border-radius: 10px;
+  padding: 1.5rem 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.stat-item:hover {
+  border-color: var(--color-secondary);
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+/* === Partner Cards === */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.partner-card {
+  background: var(--color-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.partner-card:hover {
+  border-color: var(--color-secondary);
+}
+
+.partner-card h3 {
+  color: var(--color-light);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.partner-card p {
+  color: var(--color-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* === Current Partners === */
+.current-partners {
+  margin: 1rem 0 2rem;
+}
+
+.current-partners p {
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.current-partners strong {
+  color: var(--color-light);
+}
+
+/* === Coming Soon Badge === */
+.coming-soon-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-accent), #d45a6a);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(232, 106, 122, 0.3);
+}
+
 /* === Burger Menü === */
 .burger {
   display: none;
@@ -596,6 +698,14 @@ footer nav a {
   }
 
   .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner-grid {
     grid-template-columns: 1fr;
   }
 }

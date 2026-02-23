@@ -40,6 +40,7 @@
         <a href="{{ prefix }}/{% if lang == 'de' %}unterstuetzen{% elif lang == 'en' %}support{% else %}apoiar{% endif %}/">{{ t.nav.support }}</a>
         <a href="{{ prefix }}/{% if lang == 'de' %}ausruestung{% elif lang == 'en' %}gear{% else %}equipamento{% endif %}/">{{ t.nav.gear }}</a>
         <a href="{{ prefix }}/{% if lang == 'de' %}ueber{% elif lang == 'en' %}about{% else %}sobre{% endif %}/">{{ t.nav.about }}</a>
+        <a href="{{ prefix }}/live/">{{ t.nav.live }}</a>
         <a href="{{ prefix }}/{% if lang == 'de' %}kontakt{% elif lang == 'en' %}contact{% else %}contato{% endif %}/">{{ t.nav.contact }}</a>
       </div>
       <div class="nav-right">
@@ -51,6 +52,9 @@
         </a>
         <a href="https://linktr.ee/zoebarossi" target="_blank" rel="noopener" class="social-icon" aria-label="Linktree">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.953 15.066l-.038-4.2 4.183-.006v-1.86H7.916l4.23-4.165-1.327-1.28L7.9 6.636l.008-4.062H5.926l.003 4.065L2.97 3.545 1.642 4.835l4.239 4.163H1.77v1.862l4.192.006-.038 4.2h2.029zm8.144 3.504L12.2 14.809l-1.318 1.322 3.894 3.776v3.519h1.982v-3.505l3.908-3.79-1.318-1.322-3.25 3.761z"/></svg>
+        </a>
+        <a href="https://twitch.tv/zoebarossi" target="_blank" rel="noopener" class="social-icon" aria-label="Twitch">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
         </a>
         <div class="lang-switch">
           <button class="lang-btn" aria-label="Sprache wählen">{{ lang | upper }} ▾</button>

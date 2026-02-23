@@ -1,23 +1,33 @@
 ---
 layout: page.njk
 title: Über Zoe
-subtitle: Triathletin · Berlin × São Paulo
+subtitle: Triathletin · Berlin
 lang: de
 slug: ueber
 slugEn: about
 slugPt: sobre
 ---
 
-Zoe Barossi, 35, lebt zwischen Berlin und São Paulo. Triathletin. Auf dem Weg zur Ironman Weltmeisterschaft der Frauen 2026 in Nizza.
+Zoe Barossi. 35. Berlin. Brasilianerin mit italienischen Wurzeln. 5 Sprachen. Psychodrama-Therapeutin. Projektmanagerin. Triathletin.
 
-## Zwei Städte, ein Ziel
+## São Paulo → Berlin
 
-Berlin ist Zuhause. São Paulo ist Herkunft. Zwischen diesen beiden Welten trainiert Zoe – auf den Straßen Berlins, an den Küsten Brasiliens, im Kopf überall gleichzeitig.
+Geboren in Los Angeles, aufgewachsen in São Paulo. Psychologie studiert, Ausbildung zur Psychodrama-Therapeutin. Vor sechs Jahren raus aus Brasilien — musste weg. Berlin wurde Zuhause.
 
-## Warum Triathlon?
+## N26 — Von Support zur Projektmanagerin
 
-Schwimmen, Radfahren, Laufen – drei Disziplinen, die zusammen mehr verlangen als jede einzelne. Triathlon ist kein Sport für Leute, die es bequem mögen. Es ist ein Sport für Leute, die wissen wollen, was in ihnen steckt.
+Fing ganz unten an bei einer deutschen Neobank. Customer Support. Arbeitete sich hoch. Heute Projektmanagerin. Vollzeit. Immer noch.
+
+## Der Körper
+
+Vor drei, vier Jahren angefangen mit Gym. Dann kam Triathlon. Was als Experiment begann, wurde zur Obsession. Erster Sprint im September 2024, ein Jahr später 70.3 Ironman. Zweimal Training am Tag, 15 Stunden pro Woche — neben dem Vollzeitjob.
+
+Das ist kein Hobby. Das ist eine Entscheidung.
 
 ## Nizza 2026
 
-Die Ironman Weltmeisterschaft der Frauen. Das größte Rennen. Das Ziel, auf das alles hinarbeitet. Nicht um zu gewinnen – um anzukommen. Mit allem, was dazugehört.
+Qualifikation in Brasília im April. Dann Ironman WM Nizza. Amateur — noch.
+
+## 5 Sprachen
+
+Portugiesisch. Englisch. Italienisch. Deutsch. Finnisch. Nicht weil es auf dem Lebenslauf gut aussieht — weil jede Sprache eine andere Version von ihr ist.

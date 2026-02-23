@@ -1,7 +1,7 @@
 ---
 layout: page.njk
 title: Sobre Zoe
-subtitle: Triatleta · Berlim × São Paulo
+subtitle: Triatleta · Berlim
 lang: pt
 slug: sobre
 slugEn: about
@@ -9,16 +9,26 @@ slugPt: sobre
 permalink: /pt/sobre/
 ---
 
-Zoe Barossi, 35 anos, vive entre Berlim e São Paulo. Triatleta. A caminho do Campeonato Mundial Feminino de Ironman 2026 em Nice.
+Zoe Barossi. 35. Berlim. Brasileira com raízes italianas. 5 idiomas. Psicodramatista. Gerente de projetos. Triatleta.
 
-## Duas Cidades, Um Objetivo
+## São Paulo → Berlim
 
-Berlim é casa. São Paulo é origem. Entre esses dois mundos Zoe treina – nas ruas de Berlim, nas costas do Brasil, na mente em todos os lugares ao mesmo tempo.
+Nascida em Los Angeles, criada em São Paulo. Estudou psicologia, formou-se em psicodrama. Saiu do Brasil há seis anos — precisava sair. Berlim virou casa.
 
-## Por que Triathlon?
+## N26 — De Suporte a Gerente de Projetos
 
-Natação, ciclismo, corrida – três disciplinas que juntas exigem mais do que qualquer uma sozinha. Triathlon não é um esporte para quem gosta de conforto. É um esporte para quem quer saber o que tem dentro de si.
+Começou lá embaixo em um neobanco alemão. Suporte ao cliente. Subiu. Hoje é gerente de projetos. Tempo integral. Ainda.
+
+## O Corpo
+
+Começou na academia há três, quatro anos. Depois veio o triathlon. O que começou como experimento virou obsessão. Primeiro sprint em setembro de 2024, um ano depois 70.3 Ironman. Treino duas vezes por dia, 15 horas por semana — junto com o trabalho integral.
+
+Isso não é hobby. Isso é uma decisão.
 
 ## Nice 2026
 
-O Campeonato Mundial Feminino de Ironman. A maior corrida. O objetivo para o qual tudo está sendo construído. Não para vencer – para chegar. Com tudo que isso significa.
+Classificação em Brasília em abril. Depois Campeonato Mundial Ironman em Nice. Amadora — por enquanto.
+
+## 5 Idiomas
+
+Português. Inglês. Italiano. Alemão. Finlandês. Não porque fica bonito no currículo — porque cada idioma é uma versão diferente dela.
