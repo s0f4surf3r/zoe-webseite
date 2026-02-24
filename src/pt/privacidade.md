@@ -3,6 +3,7 @@ layout: page.njk
 title: Privacidade
 lang: pt
 slug: privacidade
+slugDe: datenschutz
 slugEn: privacy
 slugPt: privacidade
 permalink: /pt/privacidade/

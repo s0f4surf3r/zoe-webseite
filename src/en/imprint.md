@@ -3,6 +3,7 @@ layout: page.njk
 title: Imprint
 lang: en
 slug: imprint
+slugDe: impressum
 slugEn: imprint
 slugPt: impressum
 permalink: /en/imprint/

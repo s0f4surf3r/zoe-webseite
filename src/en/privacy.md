@@ -3,6 +3,7 @@ layout: page.njk
 title: Privacy Policy
 lang: en
 slug: privacy
+slugDe: datenschutz
 slugEn: privacy
 slugPt: privacidade
 permalink: /en/privacy/

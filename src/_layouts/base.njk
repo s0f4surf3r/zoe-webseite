@@ -59,7 +59,7 @@
         <div class="lang-switch">
           <button class="lang-btn" aria-label="Sprache wählen">{{ lang | upper }} ▾</button>
           <div class="lang-dropdown">
-            <a href="/{{ slug or '' }}" {% if lang == 'de' %}class="lang-active"{% endif %}>DE</a>
+            <a href="/{{ slugDe or slug or '' }}" {% if lang == 'de' %}class="lang-active"{% endif %}>DE</a>
             <a href="/en/{{ slugEn or slug or '' }}" {% if lang == 'en' %}class="lang-active"{% endif %}>EN</a>
             <a href="/pt/{{ slugPt or slug or '' }}" {% if lang == 'pt' %}class="lang-active"{% endif %}>PT</a>
           </div>

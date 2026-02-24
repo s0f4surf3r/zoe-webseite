@@ -4,6 +4,7 @@ title: Contact
 subtitle: Let's connect
 lang: en
 slug: contact
+slugDe: kontakt
 slugEn: contact
 slugPt: contato
 permalink: /en/contact/

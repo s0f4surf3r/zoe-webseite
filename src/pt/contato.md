@@ -4,6 +4,7 @@ title: Contato
 subtitle: Vamos conversar
 lang: pt
 slug: contato
+slugDe: kontakt
 slugEn: contact
 slugPt: contato
 permalink: /pt/contato/
