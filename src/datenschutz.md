@@ -17,17 +17,9 @@ E-Mail: zoebarossizoe@gmail.com
 Diese Website ist eine private, nicht-gewerbliche Seite. Wir nehmen den Schutz deiner persönlichen Daten sehr ernst und behandeln deine personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
 
 **3. Hosting**
-Diese Website wird bei Netlify, Inc. (512 2nd Street, Suite 200, San Francisco, CA 94107, USA) gehostet. Beim Besuch dieser Website erfasst Netlify automatisch technische Informationen in Server-Logdateien, die dein Browser übermittelt. Dies umfasst:
+Diese Website wird bei statichost.eu (Variable Object Assignment, Stockholm, Schweden; Server Helsinki, Finnland) gehostet. statichost.eu speichert keine personenbezogenen Daten, erhebt keine IP-Adressen und führt keine Server-Logs. Es fallen keine Cookies an. Rechtsgrundlage wäre Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse), jedoch werden faktisch keine personenbezogenen Daten verarbeitet.
 
-- IP-Adresse
-- Browsertyp und -version
-- Betriebssystem
-- Referrer-URL
-- Zeitpunkt der Serveranfrage
-
-Diese Daten werden zur Sicherstellung eines reibungslosen Verbindungsaufbaus und einer komfortablen Nutzung der Website benötigt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse). Die Server-Logdaten werden nach spätestens 30 Tagen automatisch gelöscht.
-
-Netlify ist unter dem EU-US Data Privacy Framework zertifiziert, sodass ein angemessenes Datenschutzniveau gewährleistet ist. Weitere Informationen: https://www.netlify.com/privacy/
+Das Content-Management-System (CMS) dieser Website wird über Scaleway SAS (226-230 Rue du Faubourg Saint-Denis, 75010 Paris, Frankreich) betrieben. Scaleway verarbeitet ausschließlich Daten, die für die Anmeldung und Inhaltsbearbeitung durch die Websitebetreiberin erforderlich sind. Besucher dieser Website haben keinerlei Interaktion mit dem CMS-System. Alle Server befinden sich in der EU (Paris, Frankreich). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Es findet kein Drittlandtransfer statt.
 
 **4. Keine Cookies**
 Diese Website verwendet keine Cookies – weder eigene noch solche von Drittanbietern.

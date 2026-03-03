@@ -55,8 +55,12 @@
 
 ### Equipment
 - **Bikes**: Canyon (über 10.000€)
-- **Indoor**: Canyon Kicker Bike zu Hause, fährt Zwift
+- **Indoor**: Elite Trainer + Canyon Bike zu Hause, fährt Zwift
 - **Zwift-Sessions**: 5x pro Woche
+- **Neoprenanzug**: 2XU (nicht Roka — korrigiert Feb 2026)
+- **Bestehender Sponsor**: EZ Gains (Rabattcode ZOEB10)
+- **Gear-Hausaufgabe**: `HAUSAUFGABE_ZOE_AFFILIATE.md` — Zoe füllt komplette Equipment-Liste aus
+- **Affiliate-Partner-Hausaufgabe**: `HAUSAUFGABE_ZOE_AFFILIATE_PARTNER.md` — Step 1 (DE+BR), Step 2 (international)
 
 ### Persönlichkeit & Charakter
 - Zeigt sich gerne, erzählt gerne — extrovertiert
@@ -79,20 +83,61 @@
 - **Strava**: strava.com/athletes/35981492
 - **Sponsoring**: EZ Gains (Rabattcode ZOEB10 für 10% off)
 
+### Instagram-Scraping & Content-Gewinnung (Methode)
+So wurde Zoes Story, Ton und Bildmaterial aus Instagram gewonnen:
+1. **Captions scrapen**: `instaloader --no-videos --no-pictures zoebarossi` → 130 `.txt`-Dateien in `/Users/joho21/zoebarossi/`
+2. **Captions analysieren**: Alle 130 Captions gelesen, Schlüsselzitate extrahiert, Biografie-Timeline rekonstruiert (Anämie → 10k → HM → Triathlon → 70.3 IM), Ton + Sprachstil identifiziert
+3. **Fotos downloaden**: `instaloader --no-videos --no-captions --no-metadata-json zoebarossi` → 465 JPGs mit Zeitstempel-Dateinamen (z.B. `2024-09-11_09-53-22_UTC.jpg`)
+4. **Fotos zuordnen**: Zeitstempel-Dateinamen den bekannten Renndaten zugeordnet (Jul 2022 = ARCN 10k, Apr 2023 = Berlin HM, Sep 2024 = Hannover, etc.)
+5. **Beste Fotos auswählen**: 5 Renn-/Zielfotos für die Story-Seite ausgewählt
+6. **Bilder optimieren**: `sips --resampleWidth 1600 --setProperty formatOptions 85` für Web-taugliche Größe
+7. **Story schreiben**: Aus den Captions eine emotionale Ich-Perspektive-Story gebaut, Instagram-Zitate als `story-inline-quote` eingebettet, in alle 3 Sprachen (DE/EN/PT) übersetzt
+- **Wichtig**: Profil ist öffentlich, instaloader braucht keinen Login
+- **Dateinamen-Muster**: `YYYY-MM-DD_HH-MM-SS_UTC.jpg` + `.txt` (Caption) — zusammengehörig
+- **Alles in `/zoebarossi/`** (gitignored, nicht im Repo)
+
 ### Markenaufbau — Vision
 - Zoe will sich vermarkten, braucht Sponsoren um den Sport zu finanzieren
-- **Webseite** = erster Schritt im Markenaufbau
-- **Streaming (Twitch)**: Nächster geplanter Schritt
+- **Webseite** = erster Schritt im Markenaufbau (LIVE auf zoebarossi.netlify.app seit Feb 2026)
+- **Streaming (Twitch + YouTube)**: Nächster geplanter Schritt
   - Zwift-Sessions streamen (5x/Woche auf dem Indoor-Bike)
   - **Streaming-Sprache: Englisch** (nicht multilingual)
+  - Parallel auf Twitch + YouTube via OBS Multi-RTMP oder Restream.io
   - Zoe erzählt gerne, zeigt sich gerne — perfekt für Streaming
   - Potenzial: Fans gewinnen, die ihr als Person folgen
 - **Langfristiges Ziel**: Personal Brand als Triathletin aufbauen, Sponsoren gewinnen, Richtung Pro
 
+### Streaming-Setup (geplant, Stand Feb 2026)
+- **Einkaufsliste**: `EINKAUFSLISTE_STREAMING.md` (~1.650€ Phase 1, ~500€ Phase 2)
+- **Rechner**: Mac Mini M4 (16GB/512GB) — alles läuft nativ auf macOS
+- **Monitor**: LG 27" 1440p IPS an VESA-Schwenkarm an der Wand vor ihr
+- **Kameras**: 2x Elgato Facecam MK.2 (Cam 1 frontal auf Monitor, Cam 2 seitlich rechts)
+  - Kein AI-Tracking nötig — sie bewegt sich nicht auf dem Indoor-Trainer
+  - Volles Elgato-Ökosystem (Cam + Light + Stream Deck = eine App)
+- **Mikro**: Rode Wireless GO Gen 3 Single (32-bit Float, GainAssist, eingebautes Mic reicht)
+  - Sender clipt am Sport-BH/Trikot oder liegt auf Hocker neben ihr
+  - Vielseitig: auch für Outdoor-Content, Interviews, Vlogs nutzbar
+- **Licht**: Elgato Key Light Air auf Lichtstativ rechts (offener Raum), steuerbar via Stream Deck
+- **Steuerung**: Elgato Stream Deck Mini auf IKEA-Hocker neben Bike
+- **Software**: OBS Studio, Elgato Control Center, Zwift
+- **Internet**: LAN-Kabel (kein WLAN!)
+- **Kein Green Screen** — weiße Wand hinter ihr, Webcam-Kasten über Zwift-Bild (Standard bei Zwift-Streamern)
+- **Phase 2 Outdoor**: Insta360 X4 Bike Bundle (~500€) für Tempelhofer Feld / Rennen
+
+### Zoes Raum (Bike-Setup)
+- Bike steht in einer Ecke: 20cm zur Wand links, 30cm zur Wand hinten
+- Sie schaut Richtung Wohnzimmertür
+- Rechts von ihr: großer offener Raum (Sofa, Platz für Lichtstativ)
+- IKEA-Hocker vor ihr (aktuell Laptop für Zwift → wird Monitor an Wandhalterung)
+- Zweites Bike an der Wand im Flur hinter der Tür
+
 ### Bilder
 - Alle Originalbilder verfügbar (iCloud von Zoe)
-- Jochen kann Fotos/Videos von Instagram besorgen
+- 465 Instagram-Fotos runtergeladen in `/zoebarossi/` (gitignored)
+- 5 Fotos in Story-Seite eingebaut (`src/images/story/`): Berlin HM, ARCN 10k, Hannover Tri, WTCS Hamburg Jump, 70.3 Cervia
+- Cinematic Fullwidth-Darstellung mit Gradient-Overlays und `object-position` pro Bild
 - **hero-zoe.png**: KI-generiertes Superhelden-Bild (Zoe fliegt über Berlin/Fernsehturm), Portrait-Format
+- **TODO**: Originalfotos von Zoe holen (AirDrop, nicht WhatsApp!) — Instagram-Fotos sind max 1080px
 
 ### Private Infos (NUR intern, NICHT auf Website)
 - Schwierige Kindheit, dominanter Vater
@@ -110,7 +155,7 @@
 ## Deployment (WICHTIG!)
 - NIE eigenständig committen oder pushen – NUR wenn Jochen es explizit sagt
 - Änderungen immer sammeln, so spät wie möglich committen+pushen
-- Jeder Push löst Netlify-Build aus und kostet Tokens
+- Jeder Push löst statichost.eu-Build aus und kostet Build-Minuten
 
 ## Ton & Design-Philosophie
 - Echt, warm, direkt, kein Bullshit
@@ -121,12 +166,38 @@
 
 ## Tech-Stack
 - **SSG**: Eleventy v2.0.1, Nunjucks-Templates, Markdown-It (breaks: true)
-- **Hosting**: Netlify (auto-Build bei Git-Push)
+- **Hosting**: statichost.eu — `zoe-barossi.statichost.page` (auto-Build bei Git-Push)
+- **CMS**: perfectCMS — Admin unter `/admin/`, Scaleway Function `zoe-cms-api`
 - **GitHub**: `s0f4surf3r/zoe-webseite`
 - **Repo**: `/Users/joho21/Projekte/zoe_webseite`
-- **Dev-Server**: Port 8082, `0.0.0.0` (WiFi: 192.168.1.25:8082)
+- **Dev-Server**: Port 8080, `0.0.0.0`
+
+### Scaleway Function (perfectCMS)
+- **URL**: `https://perfectcmstm6mdmqs-zoe-cms-api.functions.fnc.fr-par.scw.cloud`
+- **Namespace**: `ae836b47-ca48-4d99-adb9-2a7381226cd8`
+- **NIEMALS** `scw function function deploy` benutzen — löscht alle Env-Vars!
+- Env-Vars ändern: `scw function function update <id> region=fr-par "environment-variables.KEY=value"`
+
+### statichost.eu Webhook
+- Falls Build nicht automatisch startet: `gh api repos/s0f4surf3r/zoe-webseite/hooks` prüfen
+- Webhook neu anlegen falls leer:
+  ```bash
+  gh api repos/s0f4surf3r/zoe-webseite/hooks --method POST \
+    --field name=web --field active=true \
+    --field 'events[]=push' \
+    --field 'config[url]=https://builder.statichost.eu/zoe-barossi' \
+    --field 'config[content_type]=json'
+  ```
 - **Styling**: Plain CSS, Dark Theme, CSS Custom Properties
 - **JS**: Vanilla JS (minimal)
+
+### Gemini API (Bildgenerierung)
+- **API Key**: In `.env` als `GEMINI_API_KEY` (gitignored!)
+- **Key nie in Code/Frontend/CLAUDE.md speichern** — nur in `.env`
+- **Modell für Bildgenerierung**: `gemini-2.5-flash-image` (generateContent mit `responseModalities: ["IMAGE", "TEXT"]`)
+- **Weitere verfügbare Modelle**: `gemini-3-pro-image-preview`, `imagen-4.0-generate-001`
+- **Nutzung**: Hero-Bilder, Grafiken, visuelle Elemente für die Website
+- **Aufruf**: `source .env && curl` mit dem Key als Query-Parameter
 
 ## Sprachen
 - DE (root), EN (/en/), PT (/pt/) via i18n.json
@@ -171,10 +242,23 @@
 - DDG/MStV/DSGVO konform
 - Jochen als Gestalter verlinkt
 
+## Story-Seite (Über Zoe)
+- `src/ueber.njk` (DE), `src/en/about.njk` (EN), `src/pt/sobre.njk` (PT)
+- Nutzt `base.njk` direkt mit `bodyClass: page-story`
+- 5 Cinematic Fullwidth-Bilder zwischen den Text-Sections
+- Bilder in `src/images/story/` mit `object-position` Overrides:
+  - `race-berlin-hm.jpg` → center 20%
+  - `race-berlin-10k.jpg` → default (center 30%)
+  - `race-hannover-finish.jpg` → center 18%
+  - `race-hamburg-jump.jpg` → center 35%
+  - `race-cervia-finish.jpg` → center 22%
+
 ## Offene Punkte
-- Echte Fotos von Instagram/iCloud einbauen (Jochen besorgt sie)
+- Originalfotos von Zoe holen (AirDrop) — ersetzen die 1080px Instagram-Fotos
 - SEO erst machen wenn Content steht und Site live ist
 - Virtual Office für Impressum prüfen (Privatadresse)
-- Streaming/Twitch-Integration auf der Webseite (wenn es losgeht)
+- Streaming/Twitch-Integration auf der Webseite (wenn Setup steht)
 - Blog/News-Sektion (Rennberichte, Training, persönliche Updates)
-- Gear-Seite mit echten Produkten füllen (Canyon Bikes, etc.)
+- Gear-Seite mit echten Produkten + Affiliate-Links füllen (wartet auf `HAUSAUFGABE_ZOE_AFFILIATE.md`)
+- Affiliate-Partner anmelden (wartet auf Gear-Liste, dann `HAUSAUFGABE_ZOE_AFFILIATE_PARTNER.md`)
+- Streaming-Setup kaufen + einrichten (siehe `EINKAUFSLISTE_STREAMING.md`)
