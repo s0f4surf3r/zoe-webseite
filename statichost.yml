@@ -1,0 +1,6 @@
+# statichost.eu Build-Konfiguration
+# Überschreibt die Dashboard-Einstellungen
+
+image: node:18
+command: npm install && npx @11ty/eleventy
+public: _site
