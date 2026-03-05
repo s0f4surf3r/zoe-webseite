@@ -129,7 +129,7 @@
   window.addEventListener('hashchange', handleRoute);
 
   // --- Magic Link ---
-  $('#magic-link-form').addEventListener('submit', async (e) => {
+  $('#magic-link-btn').addEventListener('click', async (e) => {
     e.preventDefault();
     const email = $('#login-email').value.trim();
     const statusEl = $('#magic-link-status');
@@ -159,9 +159,9 @@
 
   // --- Passwort-Fallback Toggle ---
   $('#toggle-password-login').addEventListener('click', () => {
-    const form = $('#login-form');
-    form.hidden = !form.hidden;
-    if (!form.hidden) $('#login-password').focus();
+    const section = $('#password-section');
+    section.hidden = !section.hidden;
+    if (!section.hidden) $('#login-password').focus();
   });
 
   // --- Login (Passwort) ---
