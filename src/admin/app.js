@@ -250,8 +250,9 @@
       })
       .join('');
 
-    // Seiten rendern
+    // Seiten rendern (.njk nur Inline-Edit auf live Site → nicht im Admin anzeigen)
     seitenList.innerHTML = res.data.seiten
+      .filter((file) => !file.name.endsWith('.njk'))
       .map((file) => {
         const title = file.name.replace(/\.md$/, '');
         return `<li class="content-item" tabindex="0" role="button" data-path="${file.path}" aria-label="${capitalize(title)}, Seite">

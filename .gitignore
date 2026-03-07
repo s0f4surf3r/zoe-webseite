@@ -1,6 +1,7 @@
 node_modules/
 _site/
 .DS_Store
+.env
 zoebarossi/
 *.logoist
 PHOTO_BRIEF_FOR_ZOE.md

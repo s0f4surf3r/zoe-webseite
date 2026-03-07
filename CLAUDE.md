@@ -142,8 +142,7 @@ So wurde Zoes Story, Ton und Bildmaterial aus Instagram gewonnen:
 ### Private Infos (NUR intern, NICHT auf Website)
 - Schwierige Kindheit, dominanter Vater
 - Hat Therapie-Karriere aufgegeben (zu nah dran, nach eigener schwerer Kindheit)
-- Tod der Mutter (vermutlich Ende 2023/Anfang 2024)
-- Jochen: "das erzählen wir nicht öffentlich"
+- **Tod der Mutter**: November 2023 (Leukämie) — Zoe hat sich entschieden, das öffentlich zu teilen (März 2026, Website.docx). Auf der Website in "Der Weg", "Über Zoe" und allen Sprachversionen.
 
 ## Arbeitsweise (ADHS-gerecht)
 - Flow-basiert, kleine Schritte, NIE mehrere Dinge gleichzeitig
