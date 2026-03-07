@@ -500,7 +500,7 @@ footer nav a {
 }
 
 .gear-brand {
-  color: var(--color-secondary);
+  color: #7a9db8;
   font-size: 0.85rem;
   margin-bottom: 0;
 }
@@ -510,11 +510,10 @@ footer nav a {
 }
 
 .gear-note {
-  color: var(--color-secondary);
+  color: #6889a3;
   font-size: 0.75rem;
   margin-top: 0.3rem;
   margin-bottom: 0;
-  opacity: 0.7;
 }
 
 .gear-item-tbd {
