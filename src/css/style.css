@@ -758,7 +758,8 @@ footer nav a {
 .story-section p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--color-secondary);
+  color: var(--color-light);
+  opacity: 0.85;
   margin-bottom: 1rem;
 }
 
