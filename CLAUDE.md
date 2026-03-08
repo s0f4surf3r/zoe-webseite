@@ -98,7 +98,7 @@ So wurde Zoes Story, Ton und Bildmaterial aus Instagram gewonnen:
 
 ### Markenaufbau — Vision
 - Zoe will sich vermarkten, braucht Sponsoren um den Sport zu finanzieren
-- **Webseite** = erster Schritt im Markenaufbau (LIVE auf zoebarossi.netlify.app seit Feb 2026)
+- **Webseite** = erster Schritt im Markenaufbau (LIVE auf zoe-barossi.statichost.page seit Feb 2026)
 - **Streaming (Twitch + YouTube)**: Nächster geplanter Schritt
   - Zwift-Sessions streamen (5x/Woche auf dem Indoor-Bike)
   - **Streaming-Sprache: Englisch** (nicht multilingual)

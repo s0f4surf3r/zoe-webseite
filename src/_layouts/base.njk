@@ -80,6 +80,37 @@
     </nav>
   </footer>
   <script>
+  // Sichtschutz — clientseitiger Passwortschutz
+  (function() {
+    if (window.location.pathname.startsWith('/admin')) return;
+    if (sessionStorage.getItem('zb_access') === '1') return;
+    var overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:99999;background:#0a1628;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:-apple-system,Helvetica Neue,sans-serif;';
+    overlay.innerHTML = '<div style="text-align:center;color:#e0e0e0;max-width:320px;padding:2rem;">' +
+      '<h2 style="font-size:1.4rem;margin-bottom:0.5rem;font-weight:600;">Zoe Barossi</h2>' +
+      '<p style="font-size:0.85rem;opacity:0.6;margin-bottom:2rem;">Website in Entwicklung</p>' +
+      '<input id="pw-input" type="password" placeholder="Passwort" style="width:100%;padding:0.75rem 1rem;border:1px solid rgba(255,255,255,0.15);border-radius:8px;background:rgba(255,255,255,0.08);color:#fff;font-size:1rem;outline:none;box-sizing:border-box;margin-bottom:0.5rem;" autocomplete="off">' +
+      '<p id="pw-error" style="color:#ff6b6b;font-size:0.8rem;min-height:1.2em;margin:0;"></p>' +
+      '</div>';
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+    var input = document.getElementById('pw-input');
+    var error = document.getElementById('pw-error');
+    input.focus();
+    input.addEventListener('keydown', function(e) {
+      if (e.key !== 'Enter') return;
+      if (input.value === 'zoe2026') {
+        sessionStorage.setItem('zb_access', '1');
+        overlay.remove();
+        document.body.style.overflow = '';
+      } else {
+        error.textContent = 'Falsches Passwort';
+        input.value = '';
+      }
+    });
+  })();
+  </script>
+  <script>
   // perfectCMS — Magic Link Auto-Login
   (function() {
     var params = new URLSearchParams(window.location.search);

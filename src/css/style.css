@@ -493,6 +493,16 @@ footer nav a {
   padding: 1.2rem;
 }
 
+.gear-item-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  padding: 0.5rem;
+}
+
 .gear-item h3 {
   color: var(--color-light);
   font-size: 0.95rem;
