@@ -628,8 +628,7 @@ footer nav a {
 .story-hero {
   min-height: 100vh;
   min-height: 100svh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -639,8 +638,8 @@ footer nav a {
 .story-hero-text {
   position: relative;
   z-index: 2;
+  width: 50%;
   padding: clamp(6rem, 12vh, 10rem) clamp(2rem, 4vw, 4rem) clamp(3rem, 6vh, 5rem) clamp(2rem, 6vw, 6rem);
-  align-self: center;
 }
 
 .story-hero-tag {
@@ -670,10 +669,11 @@ footer nav a {
 }
 
 .story-hero-image {
-  position: relative;
-  height: 100%;
-  min-height: 100vh;
-  min-height: 100svh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 65%;
   overflow: hidden;
 }
 
@@ -692,7 +692,9 @@ footer nav a {
   background: linear-gradient(
     to right,
     var(--color-bg) 0%,
-    transparent 20%
+    rgba(10, 22, 40, 0.85) 25%,
+    rgba(10, 22, 40, 0.3) 55%,
+    transparent 80%
   );
 }
 
@@ -702,7 +704,7 @@ footer nav a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 30%;
+  height: 40%;
   z-index: 1;
   background: linear-gradient(to top, var(--color-bg), transparent);
 }
@@ -1031,13 +1033,14 @@ footer nav a {
   }
 
   .story-hero {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     min-height: auto;
   }
 
   .story-hero-image {
+    position: relative;
+    width: 100%;
     min-height: 70vh;
-    order: -1;
   }
 
   .story-hero-image::before {
@@ -1045,10 +1048,11 @@ footer nav a {
   }
 
   .story-hero-image::after {
-    height: 40%;
+    height: 50%;
   }
 
   .story-hero-text {
+    width: 100%;
     max-width: 100%;
     padding: 1.5rem 1.5rem clamp(2rem, 4vh, 3rem) 1.5rem;
     text-align: center;
@@ -1072,5 +1076,120 @@ footer nav a {
 
   .story-image {
     height: 40vh;
+  }
+}
+
+/* ===== Der Weg — Hero Banner ===== */
+
+.page-weg main {
+  max-width: none;
+  padding: 0;
+}
+
+.page-weg header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+.weg-hero {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  background-image: url('/images/hero-weg.webp');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.weg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    var(--color-bg) 0%,
+    rgba(10, 22, 40, 0.4) 50%,
+    transparent 100%
+  );
+}
+
+.weg-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  z-index: 1;
+  background: linear-gradient(to top, var(--color-bg), transparent);
+}
+
+.weg-hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 0 0 clamp(2rem, 5vh, 4rem) clamp(2rem, 6vw, 6rem);
+  max-width: 60%;
+}
+
+.weg-hero-tag {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin-bottom: 0.3rem;
+}
+
+.weg-hero-text h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  color: var(--color-light);
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 40px rgba(10, 22, 40, 0.6);
+}
+
+.weg-hero-sub {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.page-weg .content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .weg-hero {
+    height: 45vh;
+    background-position: center 35%;
+  }
+
+  .weg-hero-text {
+    max-width: 90%;
+    padding-left: 1.5rem;
+  }
+
+  .weg-hero-text h1 {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+
+  .weg-hero-sub {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
   }
 }
