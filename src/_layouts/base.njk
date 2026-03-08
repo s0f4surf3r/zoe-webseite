@@ -97,16 +97,23 @@
     var input = document.getElementById('pw-input');
     var error = document.getElementById('pw-error');
     input.focus();
+    function checkPw(pw) {
+      return crypto.subtle.digest('SHA-256', new TextEncoder().encode(pw)).then(function(buf) {
+        return Array.from(new Uint8Array(buf)).map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
+      });
+    }
     input.addEventListener('keydown', function(e) {
       if (e.key !== 'Enter') return;
-      if (input.value === 'zoe2026') {
-        sessionStorage.setItem('zb_access', '1');
-        overlay.remove();
-        document.body.style.overflow = '';
-      } else {
-        error.textContent = 'Falsches Passwort';
-        input.value = '';
-      }
+      checkPw(input.value).then(function(hash) {
+        if (hash === 'd435f7c4234fda5d95712680fdf7ed90fc8fe63a096c8607f6043d96b947194a') {
+          sessionStorage.setItem('zb_access', '1');
+          overlay.remove();
+          document.body.style.overflow = '';
+        } else {
+          error.textContent = 'Falsches Passwort';
+          input.value = '';
+        }
+      });
     });
   })();
   </script>
