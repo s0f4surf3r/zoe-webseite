@@ -79,6 +79,10 @@
       <a href="{{ prefix }}/{% if lang == 'de' %}datenschutz{% elif lang == 'en' %}privacy{% else %}privacidade{% endif %}/">{{ t.footer.privacy }}</a>
     </nav>
   </footer>
+  <!-- DEV ONLY — Live Parameter Editing Panel (vor Deploy entfernen!) -->
+  <script src="/js/dev-panel.js"></script>
+  <!-- /DEV ONLY -->
+
   <script>
   // Sichtschutz — clientseitiger Passwortschutz
   (function() {

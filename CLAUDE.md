@@ -166,6 +166,7 @@ So wurde Zoes Story, Ton und Bildmaterial aus Instagram gewonnen:
 ## Tech-Stack
 - **SSG**: Eleventy v2.0.1, Nunjucks-Templates, Markdown-It (breaks: true)
 - **Hosting**: statichost.eu — `zoe-barossi.statichost.page` (auto-Build bei Git-Push)
+- **Custom Domain**: `zoebarossi.com` (+ `www.zoebarossi.com`) — registriert bei checkdomain (Zoes Account), DNS auf statichost.eu (95.217.26.94)
 - **CMS**: perfectCMS — Admin unter `/admin/`, Scaleway Function `zoe-cms-api`
 - **GitHub**: `s0f4surf3r/zoe-webseite`
 - **Repo**: `/Users/joho21/Projekte/zoe_webseite`

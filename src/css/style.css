@@ -7,6 +7,59 @@
   --color-teal:      #2abfbf;
   --color-warm:      #f4a842;
   --color-light:     #f0ece6;
+
+  /* Typografie */
+  --font-body-size: 100%;
+  --font-body-lh: 1.6;
+  --font-h1-min: 1.8rem;
+  --font-h1-max: 2.4rem;
+  --font-h2-min: 1.3rem;
+  --font-h2-max: 1.7rem;
+  --font-nav-size: 0.9rem;
+  --font-nav-spacing: 2px;
+  --font-nav-weight: 500;
+  --home-name-size: clamp(4rem, 12vw, 10rem);
+  --home-subtitle-size: clamp(2rem, 5vw, 3.2rem);
+  --home-subtitle-spacing: 6px;
+  --home-subtitle-weight: 300;
+  --home-tag-size: 0.75rem;
+  --home-tag-spacing: 3px;
+  --story-h1-size: clamp(3.5rem, 8vw, 8rem);
+  --content-h1-size: clamp(2rem, 5vw, 3rem);
+  --content-h2-size: 1rem;
+  --content-body-size: 1.1rem;
+  --content-intro-size: 1.2rem;
+
+  /* Navigation */
+  --nav-gap: 1.5rem;
+  --nav-padding: 1.5rem;
+  --header-gradient-opacity: 0.85;
+
+  /* Layout */
+  --main-max-width: 800px;
+  --main-padding: 2rem;
+  --story-section-max-width: 700px;
+  --story-quote-max-width: 700px;
+
+  /* Heroes */
+  --story-hero-img-width: 65%;
+  --story-hero-fade-25: 0.85;
+  --story-hero-fade-55: 0.3;
+  --story-hero-fade-80: 0;
+  --story-hero-bottom-height: 40%;
+  --story-img-height: 55vh;
+  --story-img-top-fade: 20%;
+  --story-img-bottom-fade: 30%;
+  --weg-hero-height: 50vh;
+
+  /* Karten */
+  --card-radius: 12px;
+  --card-padding: 2rem;
+  --gear-card-radius: 8px;
+  --gear-card-padding: 1.2rem;
+
+  /* Footer */
+  --footer-size: 0.85rem;
 }
 
 /* === Reset === */
@@ -18,13 +71,13 @@
 
 /* === Basis === */
 html {
-  font-size: 100%;
+  font-size: var(--font-body-size);
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: var(--font-body-lh);
   color: var(--color-light);
   background: var(--color-bg);
 }
@@ -35,8 +88,8 @@ h1, h2, h3 {
   margin-bottom: 0.5em;
 }
 
-h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
-h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); }
+h1 { font-size: clamp(var(--font-h1-min), 4vw, var(--font-h1-max)); }
+h2 { font-size: clamp(var(--font-h2-min), 3vw, var(--font-h2-max)); }
 
 p {
   margin-bottom: 1em;
@@ -49,7 +102,7 @@ a {
 
 /* === Layout === */
 header {
-  padding: 1.5rem clamp(2rem, 6vw, 6rem);
+  padding: var(--nav-padding) clamp(2rem, 6vw, 6rem);
 }
 
 header nav {
@@ -60,7 +113,7 @@ header nav {
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: var(--nav-gap);
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -68,9 +121,9 @@ header nav {
 
 .nav-links a {
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-size: var(--font-nav-size);
+  font-weight: var(--font-nav-weight);
+  letter-spacing: var(--font-nav-spacing);
   color: var(--color-light);
   transition: color 0.3s ease;
 }
@@ -155,15 +208,15 @@ header nav {
 }
 
 main {
-  max-width: 800px;
+  max-width: var(--main-max-width);
   margin: 0 auto;
-  padding: 2rem;
+  padding: var(--main-padding);
 }
 
 footer {
   padding: 2rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: var(--footer-size);
   color: var(--color-secondary);
 }
 
@@ -205,8 +258,8 @@ footer nav a {
 }
 
 .home-tag {
-  font-size: 0.75rem;
-  letter-spacing: 3px;
+  font-size: var(--home-tag-size);
+  letter-spacing: var(--home-tag-spacing);
   text-transform: uppercase;
   color: var(--color-teal);
   margin-bottom: 0.3rem;
@@ -214,7 +267,7 @@ footer nav a {
 }
 
 .home-name {
-  font-size: clamp(4rem, 12vw, 10rem);
+  font-size: var(--home-name-size);
   font-weight: 900;
   letter-spacing: -0.03em;
   line-height: 0.85;
@@ -225,9 +278,9 @@ footer nav a {
 }
 
 .home-subtitle {
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  font-weight: 300;
-  letter-spacing: 6px;
+  font-size: var(--home-subtitle-size);
+  font-weight: var(--home-subtitle-weight);
+  letter-spacing: var(--home-subtitle-spacing);
   text-transform: uppercase;
   color: var(--color-accent);
   margin-top: 0.4rem;
@@ -276,7 +329,7 @@ footer nav a {
 
 /* === Inhaltsseiten === */
 .content {
-  font-size: 1.1rem;
+  font-size: var(--content-body-size);
   line-height: 1.7;
   padding-top: 2rem;
 }
@@ -290,7 +343,7 @@ footer nav a {
 }
 
 .content h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: var(--content-h1-size);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -304,7 +357,7 @@ footer nav a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1rem;
+  font-size: var(--content-h2-size);
 }
 
 .content p {
@@ -316,7 +369,7 @@ footer nav a {
 }
 
 .content-intro {
-  font-size: 1.2rem;
+  font-size: var(--content-intro-size);
   color: var(--color-light);
   margin-bottom: 2.5rem;
   line-height: 1.6;
@@ -325,52 +378,94 @@ footer nav a {
 /* === Timeline (Der Weg) === */
 .timeline {
   position: relative;
-  padding-left: 2rem;
+  padding-left: 5rem;
   margin-top: 1rem;
 }
 
 .timeline::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 4.5rem;
   top: 0;
   bottom: 0;
   width: 2px;
   background: var(--color-primary);
 }
 
+/* Jahres-Marker links von der Linie */
+.timeline-year {
+  position: relative;
+  height: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+.timeline-year:first-child {
+  margin-top: 0;
+}
+
+.timeline-year::before {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  top: 0.15rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  transform: translateX(-6px);
+  z-index: 1;
+}
+
+.timeline-year span {
+  position: absolute;
+  right: calc(100% + 1.5rem);
+  top: -0.1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
 .timeline-item {
   position: relative;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  padding-left: 1.2rem;
 }
 
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -2rem;
-  top: 0.3rem;
-  width: 10px;
-  height: 10px;
+  left: -0.5rem;
+  top: 0.4rem;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: var(--color-secondary);
-  transform: translateX(-4px);
+  transform: translateX(-3px);
 }
 
 .timeline-highlight::before {
-  background: var(--color-accent);
-  box-shadow: 0 0 12px var(--color-accent);
+  background: var(--color-warm);
+  box-shadow: 0 0 10px rgba(244, 168, 66, 0.4);
 }
 
-.timeline-date {
-  font-size: 0.75rem;
+.timeline-highlight .timeline-month {
+  color: rgba(244, 168, 66, 0.7);
+}
+
+.timeline-month {
+  display: block;
+  font-size: 0.7rem;
   letter-spacing: 2px;
-  color: var(--color-teal);
+  color: rgba(42, 191, 191, 0.6);
   text-transform: uppercase;
   font-weight: 600;
+  margin-bottom: 0.4rem;
 }
 
 .timeline-card {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 .timeline-card h3 {
@@ -385,6 +480,50 @@ footer nav a {
   margin-bottom: 0;
 }
 
+.timeline-race::before {
+  background: var(--color-teal);
+  box-shadow: 0 0 8px rgba(42, 191, 191, 0.4);
+}
+
+/* Race Result — Timing Display */
+.race-result {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 0.8rem 0;
+  padding: 0.6rem 0.9rem;
+  background: rgba(42, 191, 191, 0.05);
+  border-left: 3px solid var(--color-teal);
+  border-radius: 0 6px 6px 0;
+}
+
+.race-name {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+.race-time {
+  font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-teal);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.race-place {
+  font-size: 0.65rem;
+  color: var(--color-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 8px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
 /* === Support Cards (Unterstützen) === */
 .support-grid {
   display: grid;
@@ -395,8 +534,8 @@ footer nav a {
 
 .support-card {
   background: var(--color-primary);
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
   border: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -489,8 +628,8 @@ footer nav a {
 
 .gear-item {
   background: var(--color-primary);
-  border-radius: 8px;
-  padding: 1.2rem;
+  border-radius: var(--gear-card-radius);
+  padding: var(--gear-card-padding);
 }
 
 .gear-item-img {
@@ -580,8 +719,8 @@ footer nav a {
 
 .partner-card {
   background: var(--color-primary);
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
   border: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -661,7 +800,7 @@ footer nav a {
 }
 
 .story-hero h1 {
-  font-size: clamp(3.5rem, 8vw, 8rem);
+  font-size: var(--story-h1-size);
   font-weight: 900;
   letter-spacing: -0.03em;
   line-height: 0.85;
@@ -683,7 +822,7 @@ footer nav a {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 65%;
+  width: var(--story-hero-img-width);
   overflow: hidden;
 }
 
@@ -702,9 +841,9 @@ footer nav a {
   background: linear-gradient(
     to right,
     var(--color-bg) 0%,
-    rgba(10, 22, 40, 0.85) 25%,
-    rgba(10, 22, 40, 0.3) 55%,
-    transparent 80%
+    rgba(10, 22, 40, var(--story-hero-fade-25)) 25%,
+    rgba(10, 22, 40, var(--story-hero-fade-55)) 55%,
+    rgba(10, 22, 40, var(--story-hero-fade-80)) 80%
   );
 }
 
@@ -714,7 +853,7 @@ footer nav a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40%;
+  height: var(--story-hero-bottom-height);
   z-index: 1;
   background: linear-gradient(to top, var(--color-bg), transparent);
 }
@@ -752,7 +891,7 @@ footer nav a {
 }
 
 .story-section {
-  max-width: 700px;
+  max-width: var(--story-section-max-width);
   margin: 0 auto;
   padding: clamp(2.5rem, 5vh, 4rem) 2rem;
 }
@@ -868,7 +1007,7 @@ footer nav a {
 .story-image {
   position: relative;
   width: 100%;
-  height: 55vh;
+  height: var(--story-img-height);
   overflow: hidden;
 }
 
@@ -886,7 +1025,7 @@ footer nav a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50%;
+  height: var(--story-img-bottom-fade);
   background: linear-gradient(to top, var(--color-bg), transparent);
   pointer-events: none;
 }
@@ -897,7 +1036,7 @@ footer nav a {
   top: 0;
   left: 0;
   right: 0;
-  height: 20%;
+  height: var(--story-img-top-fade);
   z-index: 1;
   background: linear-gradient(to bottom, var(--color-bg), transparent);
   pointer-events: none;
@@ -1107,7 +1246,7 @@ footer nav a {
 
 .weg-hero {
   position: relative;
-  height: 50vh;
+  height: var(--weg-hero-height);
   display: flex;
   align-items: flex-end;
   background-image: url('/images/hero-weg.webp');
